@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.xflib.prod01</groupId>
+    <artifactId>xflib-prod01</artifactId>
+    <version>1.0.0</version>
+
+    <packaging>pom</packaging>
+    <name>xflib-prod01</name>
+    <url>http://www.xflib.com</url>
+
+    <modules>
+        <module>xflib-prod01-parent</module>
+        <module>xflib-prod01-common</module>
+        <module>xflib-prod01-utils</module>
+        <module>xflib-prod01-business</module>
+        <module>xflib-prod01-service</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.build.timestamp.format>yyyyMMdd-HHmmss</maven.build.timestamp.format>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+</project>
