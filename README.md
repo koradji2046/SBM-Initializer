@@ -85,21 +85,21 @@ $ mvn clean dependency:tree
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.qzdatasoft.prod01</groupId>
-    <artifactId>qzdatasoft-prod01</artifactId>
+    <groupId>com.xflib.prod01</groupId>
+    <artifactId>xflib-prod01</artifactId>
     <version>1.0.0</version>
 
     <packaging>pom</packaging>
-    <name>qzdatasoft-prod01</name>
-    <url>http://www.qzdatasoft.com</url>
+    <name>xflib-prod01</name>
+    <url>http://www.xflib.com</url>
 
     <modules>
-        <module>qzdatasoft-prod01-parent</module>
-        <module>qzdatasoft-prod01-dependencies</module>
-        <module>qzdatasoft-prod01-common</module>
-        <module>qzdatasoft-prod01-utils</module>
-        <module>qzdatasoft-prod01-business</module>
-        <module>qzdatasoft-prod01-service</module>
+        <module>xflib-prod01-parent</module>
+        <module>xflib-prod01-dependencies</module>
+        <module>xflib-prod01-common</module>
+        <module>xflib-prod01-utils</module>
+        <module>xflib-prod01-business</module>
+        <module>xflib-prod01-service</module>
         <!-- Other Module more -->
     </modules>
 
@@ -138,13 +138,13 @@ $ mvn clean dependency:tree
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.qzdatasoft.prod01</groupId>
-    <artifactId>qzdatasoft-prod01-dependencies</artifactId>
+    <groupId>com.xflib.prod01</groupId>
+    <artifactId>xflib-prod01-dependencies</artifactId>
     <version>1.0.0</version>
 
     <packaging>pom</packaging>
-    <name>qzdatasoft-prod01-dependencies</name>
-    <url>http://www.qzdatasoft.com</url>
+    <name>xflib-prod01-dependencies</name>
+    <url>http://www.xflib.com</url>
 
     <properties>
         <java.version>1.8</java.version>
@@ -164,7 +164,7 @@ $ mvn clean dependency:tree
         <!-- Spring boot-->
         <spring-boot.veresion>2.3.4.RELEASE</spring-boot.veresion>
         <!-- prod01-->
-        <qzdatasoft-prod01.version>${project.version}</qzdatasoft-prod01.version>
+        <xflib-prod01.version>${project.version}</xflib-prod01.version>
 
         <!-- Others -->
 		<log4j.version>2.17.0</log4j.version>
@@ -180,20 +180,20 @@ $ mvn clean dependency:tree
 
             <!-- prod01 -->
             <dependency>
-                <groupId>com.qzdatasoft.prod01</groupId>
-                <artifactId>qzdatasoft-prod01-business</artifactId>
-                <version>${qzdatasoft-prod01.version}</version>
+                <groupId>com.xflib.prod01</groupId>
+                <artifactId>xflib-prod01-business</artifactId>
+                <version>${xflib-prod01.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.qzdatasoft.prod01</groupId>
-                <artifactId>qzdatasoft-prod01-utils</artifactId>
-                <version>${qzdatasoft-prod01.version}</version>
+                <groupId>com.xflib.prod01</groupId>
+                <artifactId>xflib-prod01-utils</artifactId>
+                <version>${xflib-prod01.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.qzdatasoft.prod01</groupId>
-                <artifactId>qzdatasoft-prod01-common</artifactId>
-                <version>${qzdatasoft-prod01.version}</version>
+                <groupId>com.xflib.prod01</groupId>
+                <artifactId>xflib-prod01-common</artifactId>
+                <version>${xflib-prod01.version}</version>
             </dependency>
 
             <!-- log4j -->
@@ -372,16 +372,16 @@ $ mvn clean dependency:tree
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.qzdatasoft.prod01</groupId>
-        <artifactId>qzdatasoft-prod01-dependencies</artifactId>
+        <groupId>com.xflib.prod01</groupId>
+        <artifactId>xflib-prod01-dependencies</artifactId>
         <version>1.0.0</version>
-        <relativePath>../qzdatasoft-prod01-dependencies</relativePath>
+        <relativePath>../xflib-prod01-dependencies</relativePath>
     </parent>
 
-    <artifactId>qzdatasoft-prod01-parent</artifactId>
+    <artifactId>xflib-prod01-parent</artifactId>
     <packaging>pom</packaging>
-    <name>qzdatasoft-prod01-parent</name>
-    <url>http://www.qzdatasoft.com</url>
+    <name>xflib-prod01-parent</name>
+    <url>http://www.xflib.com</url>
 
     <properties/>
 
